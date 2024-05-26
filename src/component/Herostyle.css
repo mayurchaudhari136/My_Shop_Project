@@ -1,0 +1,96 @@
+.hero-class {
+    max-width: 100vw;
+    max-height: 100vh;
+    position: relative;
+    overflow: hidden;
+
+
+}
+
+.hero-class img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    opacity: 1;
+
+}
+
+.hero-class h1 {
+    font-weight: 800;
+    color: red;
+    font-size: 60px;
+    width: 100%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+.hero-class h2 {
+    color: blue;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.hero-class button {
+    padding: 10px 25px;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    font-size: 22px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.hero-class button:hover {
+    background-color: green;
+    color: black;
+
+}
+
+.hero-text {
+    line-height: 60px;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width:850px) {
+    .hero-class {
+        width: 100vw;
+        height: 100%;
+
+
+    }
+
+    .hero-class img {
+        width: 94%;
+        height: 100%;
+
+
+        object-fit: cover;
+    }
+
+    .hero-class h1 {
+        font-weight: 700;
+        color: red;
+        font-size: 40px;
+        width: 100vh;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    }
+    .hero-class h2{
+        color: blue;
+        font-weight:600;
+        font-size: 18px;
+    }
+    .hero-class button {
+        padding: 8px 20px;
+        background-color: white;
+        color: black;
+        border-radius: 10px;
+        outline: none;
+        border: none;
+        font-size: 18px;
+        font-weight: 400;
+        
+}}

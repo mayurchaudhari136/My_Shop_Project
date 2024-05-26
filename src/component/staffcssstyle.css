@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.pure{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(179, 165, 139);
+}
+.picture{
+    width: 10000vw;
+    height: 95vh;
+    background-image: url(images/try.jpg);
+    background-size: auto;
+    background-position:center;
+
+    animation: tractormove linear 20s infinite;
+    
+}
+.tractor{
+    background-image: url(images/trac.png);
+    width: 500px;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    left: 50px;
+    top: 446px;
+    
+}
+.back-tyre{
+    background-image: url(images/trac-tyre.png);
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top: 120px;
+    left: 5px;
+    animation: tyrerotate linear 0.5s infinite 
+
+}
+.front-tyre{
+    background-image: url(images/trac-tyre.png);
+    background-position: center;
+    background-size: cover;
+    height: 130px;
+    width: 130px;
+    position: absolute;
+    top: 160px;
+    left: 340px;
+    animation: tyrerotate linear 0.5s infinite 
+
+}
+@keyframes tyrerotate
+{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes tractormove
+{
+    100%{
+        transform: translateX(-500vw)
+    }
+}
+@media screen and (max-width:850px){
+    .tractor{
+    
+        width: 300px;
+        height: 200px;
+    }
+    .back-tyre{
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    left:-25px ;
+    top: 83px;
+
+    }
+    .front-tyre{
+        height: 120px;
+        width: 120px;
+        position: absolute;
+        left: 190px;
+        top: 100px;
+
+
+    }
+    .picture{
+        width: 10000vw;
+        height: 95vh;
+    
+        animation: tractormove linear 20s infinite;
+        
+    }
+    .pure{
+        width: 100vw;
+        height: 100vh;
+        background-color: rgb(179, 165, 139);
+        overflow: hidden;
+        
+    }
+
+}
+
+
+

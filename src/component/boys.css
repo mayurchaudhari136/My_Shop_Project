@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+.our-powers{
+    margin: 7rem 6rem;
+    display: flex;
+    margin-top: 100px;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+   
+    
+}
+.container1{
+    margin-top: 50px;
+    width: 32%;
+    height: auto;
+    padding: 50px 30px;
+    box-shadow: 10px 20px 30px 10px rgba(0,5,0, 0.2);
+    border-radius: 10px;
+    transition: 1s ease-in-out;
+    
+    
+}
+.imgform img{
+    width: 60%;
+    height: 60%;
+    border-radius: 10px;
+
+}
+.container1:hover{
+    box-shadow: 10px 20px 30px 10px rgba(0,5,0, 0.8);
+    transform: scale(1.1);
+
+}
+.container1 h2{
+    margin-top: 10px;
+    font-size: 22px;
+    color:rgb(255, 0, 0);
+    font-family: "Oswald", sans-serif;
+}
+.container1 h4{
+    color: blue;
+}
+.container1 p{
+    font-size: 18px;
+    color: black;
+    font-weight: 600;
+    padding: 15px 25px;
+    font-family: "Oswald", sans-serif;
+    
+}
+.icon{
+    font-size: 30px;
+    
+}
+.icon .fa-facebook{
+    color: blue;
+    margin: 10px 10px;
+}
+.icon .fa-instagram{
+    color: rgb(236, 6, 45);
+    margin: 10px 10px;
+}
+.icon .fa-whatsapp{
+    color: rgb(12, 236, 12);
+    margin: 10px 10px;
+}
+
+
+@media screen and (max-width:850px){
+    .our-powers{
+        display: grid;
+        grid-template-rows: repeat(1,1fr);
+        width: 100%;
+        align-items: center;
+        
+    }
+    .container1{
+        width: 60%;
+        align-items: center;
+        margin-left: 50px;
+        justify-content: center;
+    }
+    .container1:hover{
+        transform: scale(1);
+
+
+    }
+    .container1 h2{
+        margin-top: 10px;
+        font-size: 15px;
+        color:rgb(255, 0, 0);
+    }
+    .container1 p{
+        font-size: 12px;
+        color: black;
+        font-weight: 600;
+        padding: 10px 15px;
+        
+    }
+
+}
+
+
+
+
